@@ -1,0 +1,307 @@
+/******************************
+	[ TABLE OF Contents ]
+		1- General styles
+		2- header
+		3- Preloader
+		4- Header
+		5- Home
+		6- About-us
+		7- Portfolio
+		8- Testimonials
+		9- Contact Us
+	   10- Footer
+	   11- Shared styles
+*****************************
+*/
+
+/*** 1- Start general styles ***/
+* {box-sizing: border-box;}
+body {font-family: 'futura_ltbook', sans-serif;}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'futura_ltbold', sans-serif;
+    color:  #484848;
+}
+a,button{outline: none !important;}
+a:hover,a:focus{text-decoration: none; outline: none;}
+/*** End general styles ***/
+
+/*****START HEADER*******/
+/** top nav**/
+header .top-nav{background-color:#462b15; }
+header .top-nav a{color: #fff;}
+header .top-nav a:hover {color: #484848;}
+header .top-nav .fa{font-size: 20px;margin: 12px 1px 3px;}
+@media(max-width: 991px) {
+header .top-nav{padding: 1px;}
+header .top-nav .fa{margin-top: 1px;}
+header .top-nav .info-icons li:first-child {margin-top: 10px;}
+header .top-nav .social-icons fa {margin-top: -1px;}
+}
+/* main nav*/
+.navbar{ background-color: #7e4c2d; opacity: 0.9;} 
+.navbar .navbar-brand{	width: 200px;	height: 100px;	margin-top: -25px;
+ }
+.navbar-nav .nav-link {color: #242424 !important;	font-size: 18px;}
+.navbar-nav .active .nav-link,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {color: #fff !important;}
+.navbar .container a img {width: 200px;	height: 100px;	margin-top: 12px;	padding: 0px 0px 0px 0px;}
+/*end HEADER
+
+
+/*****start slide*******/
+.slide-1 .carousel-item::before{
+	content:" ";
+	position: absolute;
+	height:100%;
+	width:100%;
+	background: rgba(0,0,0,0.2);
+	top:0;
+	left:0;
+}
+.carousel-caption{ right: 30px;  bottom: 15%; left: 30px; color: #eee; }
+.slide .carousel-inner .carousel-caption h5 { font-size: 60px; font-family: 'cursive'; margin-bottom: 100px; color:#fff; }
+.slide .carousel-inner .carousel-caption p{font-size: 30px; letter-spacing: 2px; color:#eee; font-family: cursive;}
+/*end slide*/
+/*start img-chef*/
+.chef .container .row .cole {padding: 50px; margin-top: 20px;}
+.chef .container .row .cole h2 {padding: 30px 0px; color: #b67940; font-size: 50px; font-family: cursive;}
+.chef .container .row .cole span { padding: 30px 0px; font-size: 30px; color: #ffd300; }
+.chef .container .row .cole p{padding: 30px 0px; letter-spacing: 1px; color: #aaa; font-size: 20px;}
+.chef .container .row .cole img{width: 500px; height: 600px; }
+.chef .container .row .cole button{padding: 10px}
+
+@media (max-width: 991px) {
+.chef .container .row .cole h2 {font-size: 55px; text-align: center;}
+.chef .container .row .cole {padding: 0px 50px 0px 50px;margin-top: 20px;}
+.chef .container .row .cole p {padding: 10px 0px}
+  }
+
+
+	background: #42b3e5;
+/*end img-chef*/
+
+/*start redius*/
+.redius {
+	padding: 26px 0px;
+	background-color: #d6d6d6;
+}
+
+.redius .container h3{
+	font-size: 50px;
+	font-family: cursive;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+.redius .container .p-p {
+	font-size: 20px;
+	font-family: cursive;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+.redius .fa{
+	 /*font-size: 40px;*/
+	 width: 200px;
+	 height: 200px;
+	 border-radius: 100%;
+	 border: 1px solid ;
+	 line-height: 100px;
+	 text-align: center;
+	margin: 30px 20px 15px 30px;
+}
+.redius .row h5{
+	font-size: 22px;
+	font-family: cursive;
+	text-align:center;
+	margin: 50px 24px 29px 36px;	
+}
+.redius .row p{
+	font-size: 15px;
+	font-family: cursive;
+	text-align:center;
+	margin: 37px 2px -10px 30px;
+	padding-bottom: 0px;
+}	
+/*end redius*/
+
+/*start cards*/
+
+.cards{
+	padding: 40px 0px ;
+}
+.cards .card{
+	border:none;
+}
+.cards .card h5{
+padding-top: 10px;
+font-size: 30px;
+font-family: cursive;
+}
+
+.cards .card p {
+	padding-top: 10px;
+	font-size: 20px;
+	font-family: cursive;
+}
+/*start portofolio*/
+.portofolio{ background: #b3ab8f;padding-bottom: 50px ;}
+.filter{transition: ,5s; margin: 50px 38px;}
+.filter > button {
+	border: 1px solid transparent;
+	border-radius: 16px;
+	background: transparent;
+	text-transform: uppercase;
+	font-family: cursive;
+	color: #e34;
+	padding: 6px 17px 5px;
+	margin-bottom: 10px;
+	font-weight: 500;
+	color: #fff;
+	}
+
+.filter > button:hover, .filter > button.is-checked{
+	border: 1px solid #282828;
+	background:  #282828;
+}
+.grid-item {
+	position: relative;
+	border-top: 15px solid transparent;
+	overflow: hidden;
+}
+.grid-item img{
+	width: 500px;
+	height: 500px;
+}
+.grid-item:hover img {transform: scale(1.1);}
+.grid-item-layer{
+	position: absolute;
+	top: 0px;
+	left:  0px;
+	height: 100%;
+	width: 100%;
+	background-color:rgba(0,0,0,0.6); 
+	opacity: 0;
+}
+.grid-item-layer:hover {opacity: 1}
+.grid-item-layer > a:first-child {margin-right: 10px;}
+.grid-item-layer .fa{
+	background: #42b3e5;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 30px;
+	margin-top: 35%;
+	padding: 15px;
+}
+.grid-item-layer .fa:hover{
+    border:2px solid #42b3e5;
+    background:transparent;
+    color:#42b3e5;
+}
+@media (max-width: 768px) {
+	.grid-item-layer .fa {margin-top: 40%;} 
+} 
+@media (min-width: 768px) {
+	.grid-item {
+		float: left;
+		width: 24.5%;
+		margin-left: 1.5%;
+		height: 260px;
+	}
+	.grid-item-width2 {
+		width: 48%;
+		margin-left: 0;
+	    height: 520px;
+	}
+	.grid-item-width2 .fa {margin-top: 42%;}
+} 
+/*end portofolio*/
+/*start testemonials*/
+.diver{
+	padding: 30px;
+}
+.diver h3{
+	font-size: 40px;
+	font-weight: bold;
+	font-family: cursive;
+	margin-bottom: 30px;
+}
+.diver p.lead{
+	font-size: 18px;
+	color: #000;
+	margin-bottom: 30px;
+}
+.diver .dives-p {
+	background: #e5e5e5;
+    border-radius: 18px;
+    margin: 30px 0px;
+    position: relative;
+    padding: 50px;
+	transition: .6s;
+}
+.diver .dives-p::after{
+	background: inherit;
+	bottom: -10px;
+	height: 20px;
+	content: "";
+	left: 47%;
+	position: absolute;
+	transform: rotate(45deg);
+	width: 20px;
+}
+.diver .divs-img{
+	text-align: center;
+}
+.diver .divs-img span{
+	font-size: 20px;
+	display: block;
+	padding-top: 10px;
+	 text-transform: uppercase;
+}
+
+.dives-p p{position: relative;}
+.dives-p p:first-child::before {
+	color: #989898;
+	content: "";
+	position: absolute;
+	font-family: "GillSansMT-UltraBold";
+	right: -44%;
+	top: -45%;
+	transform: rotateY(180deg);
+}
+.dives-p:hover{
+	color:  #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*end testemonials*/
+
+
